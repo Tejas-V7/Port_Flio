@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+    line-height: 1.5;
+}
+
+header{
+    background:gray;
+    color: white;
+    padding: 15px 20px;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h1{
+    font-size: 22px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    transition: 3s;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+
+/*---Hero---*/
+
+.hero{
+    padding: 50px 20px;
+    text-align: center;
+    background: lightblue;
+}
+
+.hero h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+/*Section About,skills*/
+
+.section{
+    padding: 40px 20px;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+.about-text{
+    text-align: center;
+}
+
+/*----skills grid----*/
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.skill-card{
+    background: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid darkblue;
+    text-align: center;
+}
+
+.skill-card:hover{
+    transform: scale(1);
+    box-shadow:0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+/*projects section*/
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap:20px;
+}
+.project-card{
+    background: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid darkblue;
+}
+.project-card:hover{
+    transform: scale(1);
+    box-shadow: 0px 8px 20px ;
+}
+
+form input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+/*contact section*/
+.contact-info{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background: #f1ebeb;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid lightblue;
+}
+.contact-info:hover{
+    color: #ff0004;
+}
+button{
+    background: lightblue;
+    color: darkblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 300ms;
+}
+button:hover{
+    background: lightblue;
+    color: black;
+}
